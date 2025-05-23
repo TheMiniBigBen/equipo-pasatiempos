@@ -4,10 +4,11 @@
 Esta aplicación web muestra información personal y pasatiempos de los miembros del equipo, implementando buenas prácticas de desarrollo frontend con HTML5 semántico, CSS3 moderno y JavaScript limpio.
 
 ## Roles del equipo
-- **Líder de proyecto**: [Nombre]
-- **Diseñador UI**: [Nombre]
-- **Desarrollador front-end**: [Nombre]
-- **Tester/Documentador**: [Nombre]
+- **Project Manager**: Emiliano Holguín Flores
+- **Mobile Developer**: Oscar Leonardo Perez Romero
+- **Frontend Developer**: Maria Fernanda Guerrero Calderón
+- **Backend Developer**: Alan Mauricio Alvarado Martínez
+- **IoT Developer**: Angel Eduardo Castillo Nevárez
 
 ## Tecnologías utilizadas
 - HTML5 semántico

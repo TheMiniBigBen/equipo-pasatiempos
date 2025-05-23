@@ -1,60 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio - Pasatiempos</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Creativo | Pasatiempos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Conoce a nuestro equipo</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="equipo.html">Equipo</a>
-    </nav>
-  </header>
+    <header class="glass-nav">
+        <div class="container">
+            <h1 class="logo">Equipo<span>Creativo</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="equipo.html"><i class="fas fa-users"></i> Integrantes</a></li>
+                    <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main id="inicio">
-    <section>
-      <h2>Bienvenidos</h2>
-      <p>Somos un equipo multidisciplinario y creativo. Conócenos mejor en la sección de <strong>Equipo</strong>.</p>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Conoce al equipo detrás de la magia</h2>
+                <p>Profesionales apasionados con pasatiempos únicos</p>
+            </div>
+        </section>
 
-    <section>
-      <h2>Nuestro Equipo</h2>
-      <div class="team-container">
-        <a class="team-member" href="equipo.html#iot">
-          <img src="img/Angel.jpg" alt="IoT Developer" />
-          <h3>Angel Eduardo Castillo Nevárez</h3>
-          <p>IoT Developer</p>
-        </a>
-        <a class="team-member" href="equipo.html#backend">
-          <img src="img/Alan.jpg" alt="Backend" />
-          <h3>Alan Mauricio Alvarado Martínez</h3>
-          <p>Backend Developer</p>
-        </a>
-        <a class="team-member" href="equipo.html#frontend">
-          <img src="img/Fer.jpg" alt="Frontend" />
-          <h3>Maria Fernanda Guerrero Calderón</h3>
-          <p>Frontend Developer</p>
-        </a>
-        <a class="team-member" href="equipo.html#mobile">
-          <img src="FOTOOSCAR" alt="Mobile" />
-          <h3>Oscar Leonardo Perez Romero</h3>
-          <p>Mobile Developer</p>
-        </a>
-        <a class="team-member" href="equipo.html#pm">
-          <img src="img/Emiliano.jpg" alt="Project Manager" />
-          <h3>Emiliano Holguín Flores</h3>
-          <p>Project Manager</p>
-        </a>
-      </div>
-    </section>
-  </main>
+<section id="integrantes" class="container">
+    <h2 class="section-title">Nuestro Equipo</h2>
+    <div class="team-grid">
+<!-- Tarjeta 1 -->
+<article class="profile-card">
+  <div class="card-header">
+    <img src="img/Angel.jpg" alt="Angel Eduardo Castillo Nevárez" class="profile-img">
+  </div>
+  <div class="card-body">
+    <h3>Angel Eduardo Castillo Nevárez</h3>
+    <p class="role">IoT Developer</p>
+    <button class="btn-hobbies" onclick="toggleHobbies('1')">
+      Ver pasatiempos <i class="fas fa-chevron-down"></i>
+    </button>
+    <div id="hobbies-1" class="hobbies hidden">
+      <ul>
+        <li><i class="fas fa-microchip"></i> Integración de sensores</li>
+        <li><i class="fas fa-gamepad"></i> Videojuegos</li>
+        <li><i class="fas fa-tree"></i> Naturaleza</li>
+      </ul>
+    </div>
+  </div>
+</article>
 
-  <footer>
-    <p>&copy; 2025 - Equipo Pasatiempos</p>
-  </footer>
+<!-- Tarjeta 2 -->
+<article class="profile-card">
+  <div class="card-header">
+    <img src="img/Alan.jpg" alt="Alan Mauricio Alvarado Martínez" class="profile-img">
+  </div>
+  <div class="card-body">
+    <h3>Alan Mauricio Alvarado Martínez</h3>
+    <p class="role">Backend Developer</p>
+    <button class="btn-hobbies" onclick="toggleHobbies('2')">
+      Ver pasatiempos <i class="fas fa-chevron-down"></i>
+    </button>
+    <div id="hobbies-2" class="hobbies hidden">
+      <ul>
+        <li><i class="fas fa-gamepad"></i> Videojuegos</li>
+        <li><i class="fas fa-dumbbell"></i> Gimnasio</li>
+        <li><i class="fas fa-book"></i> Lectura</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- Tarjeta 3 -->
+<article class="profile-card">
+  <div class="card-header">
+    <img src="img/Fer.jpg" alt="Maria Fernanda Guerrero Calderón" class="profile-img">
+  </div>
+  <div class="card-body">
+    <h3>Maria Fernanda Guerrero Calderón</h3>
+    <p class="role">Frontend Developer</p>
+    <button class="btn-hobbies" onclick="toggleHobbies('3')">
+      Ver pasatiempos <i class="fas fa-chevron-down"></i>
+    </button>
+    <div id="hobbies-3" class="hobbies hidden">
+      <ul>
+        <li><i class="fas fa-gamepad"></i> Videojuegos</li>
+        <li><i class="fas fa-headphones"></i> Música</li>
+        <li><i class="fas fa-bed"></i> Dormir</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- Tarjeta Oscar -->
+<article class="profile-card">
+  <div class="card-header">
+    <img src="img/oscar.jpg" alt="Oscar Leonardo Perez Romero" class="profile-img">
+  </div>
+  <div class="card-body">
+    <h3>Oscar Leonardo Perez Romero</h3>
+    <p class="role">Mobile Developer</p>
+    <button class="btn-hobbies" onclick="toggleHobbies('4')">
+      Ver pasatiempos <i class="fas fa-chevron-down"></i>
+    </button>
+    <div id="hobbies-4" class="hobbies hidden">
+      <ul>
+        <li><i class="fas fa-gamepad"></i> Jugar videojuegos</li>
+        <li><i class="fas fa-users"></i> Pasar tiempo con amigos</li>
+        <li><i class="fas fa-headphones"></i> Escuchar música</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<!-- Tarjeta 5 -->
+<article class="profile-card">
+  <div class="card-header">
+    <img src="img/Emiliano.jpg" alt="Emiliano Holguín Flores" class="profile-img">
+  </div>
+  <div class="card-body">
+    <h3>Emiliano Holguín Flores</h3>
+    <p class="role">Project Manager</p>
+    <button class="btn-hobbies" onclick="toggleHobbies('5')">
+      Ver pasatiempos <i class="fas fa-chevron-down"></i>
+    </button>
+    <div id="hobbies-5" class="hobbies hidden">
+      <ul>
+        <li><i class="fas fa-dumbbell"></i> Hacer ejercicio</li>
+        <li><i class="fas fa-headphones"></i> Música</li>
+        <li><i class="fas fa-film"></i> Ver películas</li>
+        <li><i class="fas fa-users"></i> Jugar con amigos</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+                <!-- Añade más tarjetas cambiando los IDs -->
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Trabajemos juntos</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="nombre" required placeholder=" ">
+                        <label for="nombre">Nombre completo</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Correo electrónico</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" required placeholder=" "></textarea>
+                        <label for="mensaje">Tu mensaje</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Equipo Creativo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

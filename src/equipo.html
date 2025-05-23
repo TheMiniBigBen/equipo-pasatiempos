@@ -1,65 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Detalles del Equipo</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Equipo Creativo | Historia de los Miembros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Miembros del equipo</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="equipo.html">Equipo</a>
-    </nav>
-  </header>
+    <header class="glass-nav">
+        <div class="container">
+            <h1 class="logo">Equipo<span>Creativo</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="equipo.html"><i class="fas fa-users"></i> Integrantes</a></li>
+                    <li><a href="index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section id="iot">
-      <h2>Angel Eduardo Castillo Nevárez</h2>
-      <img src="img/Angel.jpg" alt="IoT" />
-      <p><strong>Rol:</strong> IoT Developer</p>
-      <p>Soy Angel, desarrollador especializado en Internet de las Cosas (IoT), nacido el 4 de enero del 2000 en Durango. Me apasiona la tecnología y disfruto conectar el mundo físico con el digital. En este proyecto, me encargo de integrar sensores y dispositivos inteligentes, asegurando una comunicación eficiente entre el hardware y el software. Siempre busco soluciones innovadoras y eficientes.</p>
-    </section>
+    <main class="container" style="padding-top: 100px;">
+        <h2 class="section-title">Historias de los Miembros</h2>
 
-    <section id="backend">
-      <h2>Alan Mauricio Alvarado Martínez</h2>
-      <img src="img/Alan.jpg" alt="Backend" />
-      <p><strong>Rol:</strong> Backend Developer</p>
-      <p>20 años,
-        Soy estudiante de la carrera de Ingeniería en software Juego videojuegos, Voy al gimnasio y me gusta leer </p>
-    </section>
+        <section class="team-history-grid">
+            <!-- Historia miembro 1 -->
+            <article class="profile-history-card">
+                <div class="card-header">
+                    <img src="img/Angel.jpg" alt="Angel Eduardo Castillo Nevárez" class="profile-img" />
+                </div>
+                <div class="card-body">
+                    <h3>Angel Eduardo Castillo Nevárez</h3>
+                    <p class="role">IoT Developer</p>
+                    <p class="bio">
+                        Hola, soy Ángel Eduardo Castillo Nevárez, nací en el 2000 y tengo 25 años. Soy IoT Developer y me apasiona integrar sensores para crear soluciones innovadoras. En mi tiempo libre disfruto aprender sobre tecnología y desarrollar proyectos personales. Me gusta enfrentar retos y siempre busco nuevas formas de mejorar la Naturaleza y los Video juegos.
+                    </p>
+                </div>
+            </article>
 
-    <section id="frontend">
-      <h2>Maria Fernanda Guerrero Calderón</h2>
-      <img src="img/Fer.jpg" alt="Frontend" />
-      <p><strong>Rol:</strong> Frontend Developer</p>
-      <p>Soy Maria Fernanda Guerrero Calderón, nací el 3 de noviembre del 2005 en Durango, Durango, tengo 19 años, soy la menor en mi familia, estudio en la Universidad Tecnológica de Durango la carrera de Tecnologías de la Información, juego y me apasionan los videojuegos desde una corta edad especialmente de la compañia Nintendo. 
+            <!-- Historia miembro 2 -->
+            <article class="profile-history-card">
+                <div class="card-header">
+                    <img src="img/Alan.jpg" alt="Alan Mauricio Alvarado Martínez" class="profile-img" />
+                </div>
+                <div class="card-body">
+                    <h3>Alan Mauricio Alvarado Martínez</h3>
+                    <p class="role">Backend Developer</p>
+                    <p class="bio">
+                        Alan Alvarado Martínez,
+                        20 años
+                        Soy estudiante de la carrera de Ingeniería en software
+                        Juego videojuegos, Voy al gimnasio y me gusta leer libros
+                    </p>
+                </div>
+            </article>
 
-        Jugar videojuegos
-        Escuchar música
-        Dormir
-        </p>
-    </section>
+            <!-- Historia miembro 3 -->
+            <article class="profile-history-card">
+                <div class="card-header">
+                    <img src="img/Fer.jpg" alt="Maria Fernanda Guerrero Calderón" class="profile-img" />
+                </div>
+                <div class="card-body">
+                    <h3>Maria Fernanda Guerrero Calderón</h3>
+                    <p class="role">Frontend Developer</p>
+                    <p class="bio">
+                        Soy Maria Fernanda Guerrero Calderón, nací el 3 de noviembre del 2005 en Durango, Durango, tengo 19 años, soy la menor en mi familia, estudio en la Universidad Tecnológica de Durango la carrera de Tecnologías de la Información, juego y me apasionan los videojuegos desde una corta edad especialmente de la compañia Nintendo. 
+                    </p>
+                </div>
+            </article>
 
-    <section id="mobile">
-      <h2>Oscar Leonardo Perez Romero</h2>
-      <img src="img/oscar.jpg" alt="Mobile" />
-      <p><strong>Rol:</strong> Mobile Developer</p>
-      <p>Responsable de la versión móvil, tecnologías y objetivos.</p>
-    </section>
+            <!-- Historia miembro 4 -->
+            <article class="profile-history-card">
+                <div class="card-header">
+                    <img src="img/oscar.jpg" alt="Oscar Leonardo Perez Romero" class="profile-img" />
+                </div>
+                <div class="card-body">
+                    <h3>Oscar Leonardo Perez Romero</h3>
+                    <p class="role">Mobile Developer</p>
+                    <p class="bio">
+                      Me llamo Oscar Pérez tengo 20 años y soy de Durango, estoy estudiando Tecnologías de la información en la UTD y en mis tiempos libres me gusta jugar videojuegos, pasar tiempo con mis amigos y escuchar músic                    </p>
+                </div>
+            </article>
 
-    <section id="pm">
-      <h2>Emiliano Holguín Flores</h2>
-      <img src="img/Emiliano.jpg" alt="PM" />
-      <p><strong>Rol:</strong> Project Manager</p>
-      <p>Mi nombre es Emiliano Flores. Nací en Durango, Durango, México, el 22 de enero de 2003, lo que me hace tener 22 años. Actualmente, estoy estudiando la carrera de Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Durango (UTD). Soy parte de una familia de cinco integrantes y soy el mayor de tres hijos. En mi tiempo libre, disfruto hacer ejercicio, escuchar música, ver películas y jugar videojuegos con mis amigos.</p>
-    </section>
-  </main>
+            <!-- Historia miembro 5 -->
+            <article class="profile-history-card">
+                <div class="card-header">
+                    <img src="img/Emiliano.jpg" alt="Emiliano Holguín Flores" class="profile-img" />
+                </div>
+                <div class="card-body">
+                    <h3>Emiliano Holguín Flores</h3>
+                    <p class="role">Project Manager</p>
+                    <p class="bio">
+                        Mi nombre es Emiliano Flores. Nací en Durango, Durango, México, el 22 de enero de 2003, lo que me hace tener 22 años. Actualmente, estoy estudiando la carrera de Ingeniería en Desarrollo y Gestión de Software en la Universidad Tecnológica de Durango (UTD). Soy parte de una familia de cinco integrantes y soy el mayor de tres hijos. En mi tiempo libre, disfruto hacer ejercicio, escuchar música, ver películas y jugar videojuegos con mis amigos.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 - Equipo Pasatiempos</p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Equipo Creativo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
